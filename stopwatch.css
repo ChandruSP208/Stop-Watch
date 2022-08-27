@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #202020;
+    color:white
+}
+
+ul{
+    list-style: none;
+}
+.title{
+  text-align: center;
+  padding-top: 20px;
+  color:white;
+}
+#stopwatch{
+position: absolute;
+top:40%;
+left:50%;
+font-size: 100px;
+transform: translate(-50%,-55%);
+}
+#buttons{
+   position:absolute;
+   top:50%;
+   left:30%;
+}
+#buttons li{
+    display: inline;
+    padding-left: 10px;
+
+}
+li button:hover{
+    background-color: white;
+    color:black;
+    
+    font-weight:700;
+}
+button{
+   width: 150px;
+   height: 30px;
+   border: 3px solid white;
+   border-radius: 80px;
+   cursor: pointer;
+   outline: none;
+   color:white;
+   background-color: #202020;
+   
+}
+@media  (max-width:650px) {
+    #buttons{
+        padding-top: 0px;
+           
+         
+    }
+    #stopwatch{
+        
+        font-size: 70px;
+        text-align: center;
+    }
+    #buttons li{
+        display: block;
+        padding: 10px;
+       
+    }
+    
+}
+    
+
+@media (min-width:651px) and (max-width:768px){
+    #stopwatch{
+        font-size: 80px;
+        text-align: center;
+    }
+    #buttons{position:absolute;
+    top:50%;
+    left:20%;
+    }
+
+}
